@@ -42,7 +42,7 @@ public class Main {
             String name = scanner.nextLine();
             System.out.println("Введите возраст пользователя " + i);
             int age = scanner.nextInt();
-            scanner.nextLine(); // Очистка буфера
+            scanner.nextLine();
 
             userMap.computeIfAbsent(age, k -> new ArrayList<>()).add(new User(name, age));
         }
